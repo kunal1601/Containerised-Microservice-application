@@ -47,7 +47,6 @@ microservices-docker-app/
 🛠️ Setup & Installation
 📌 Prerequisites
 Docker installed and running
-
 Docker Compose installed
 
 🔧 Steps
