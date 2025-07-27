@@ -54,8 +54,8 @@ Docker Compose installed
 
 🔧 Steps
 # Clone the repository
-git clone https://github.com/kunal1601/Containerised-Microservice-application.git
-cd Containerised-Microservice-application
+- git clone https://github.com/kunal1601/Containerised-Microservice-application.git
+- cd Containerised-Microservice-application
 
 # Build and run all containers
 docker-compose up --build
