@@ -18,19 +18,21 @@ This setup is ideal for understanding microservices communication, container orc
 
 ## 📦 Project Structure
 
+```
 .
-├── user_service/           
+├── user_service/
 │   ├── app.py
 │   ├── Dockerfile
 │   └── requirements.txt
-├── data_service/           
+├── data_service/
 │   ├── app.py
 │   ├── Dockerfile
 │   └── requirements.txt
-├── docker-compose.yml      
+├── docker-compose.yml
 └── README.md
+```
 
-⚙️ How It Works
+## ⚙️ How It Works
 1. docker-compose.yml spins up:
 
   - user_service (Python + Flask)
@@ -45,7 +47,7 @@ This setup is ideal for understanding microservices communication, container orc
 
 4. REST API calls are exchanged between user_service and data_service.
 
-🛠️ Setup & Installation
+## 🛠️ Setup & Installation
 📌 Prerequisites
 Docker installed and running
 Docker Compose installed
@@ -68,7 +70,7 @@ docker-compose up --build
 To stop and remove containers:
 - docker-compose down
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 - Add Nginx as a reverse proxy
 
 - Integrate logging and monitoringā
