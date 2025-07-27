@@ -16,7 +16,7 @@ This setup is ideal for understanding microservices communication, container orc
 ⚙️ Docker Compose — One command to spin up the entire app
 
 
-📁 Project Structure
+## 📁 Project Structure
 microservices-docker-app/
 ├── docker-compose.yml         # Orchestrates all services
 ├── init.sql                   # Initializes PostgreSQL schema
