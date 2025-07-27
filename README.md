@@ -1,10 +1,10 @@
-🐳 Microservices-Based Dockerized Application with PostgreSQL
+## 🐳 Microservices-Based Dockerized Application with PostgreSQL
 
 This project demonstrates a containerized microservices architecture using Docker and Docker Compose. It includes two Python-based microservices—user_service and data_service—each running independently in its own container and communicating with each other via RESTful APIs. Both services interact with a shared PostgreSQL database for persistent data storage.
 
 This setup is ideal for understanding microservices communication, container orchestration, and service isolation in a real-world environment.
 
-📦 Features
+## 📦 Features
 🚀 Microservices Architecture — Modular design using independent services
 
 🐳 Dockerized Services — Each service is containerized using Docker
@@ -76,7 +76,7 @@ To stop and remove containers:
 
 - Unit testing and CI/CD pipeline 
 
-🙋‍♂️ **Author**
+## 🙋‍♂️ **Author**
 ------------
 
 **Kunal Sharma**  
