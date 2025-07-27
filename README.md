@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9363714d-e6ed-43f8-92d3-36d53d511587" />## 🐳 Microservices-Based Dockerized Application with PostgreSQL
+## 🐳 Microservices-Based Dockerized Application with PostgreSQL
 
 This project demonstrates a containerized microservices architecture using Docker and Docker Compose. It includes two Python-based microservices—user_service and data_service—each running independently in its own container and communicating with each other via RESTful APIs. Both services interact with a shared PostgreSQL database for persistent data storage.
 
@@ -16,19 +16,19 @@ This setup is ideal for understanding microservices communication, container orc
 ⚙️ Docker Compose — One command to spin up the entire app
 
 
-## 📁 Project Structure
-microservices-docker-app/
+## 📦 Project Structure
+
 .
-├── docker-compose.yml         # Orchestrates all services
-├── init.sql                   # Initializes PostgreSQL schema
-├── user_service/
-│   ├── app.py                 # User service application logic
-│   ├── Dockerfile             # Docker image setup for user_service
-│   └── requirements.txt       # Python dependencies
-└── data_service/
-    ├── app.py                 # Data service application logic
-    ├── Dockerfile             # Docker image setup for data_service
-    └── requirements.txt       # Python dependencies
+├── user_service/           
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+├── data_service/           
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+├── docker-compose.yml      
+└── README.md
 
 ⚙️ How It Works
 1. docker-compose.yml spins up:
@@ -60,9 +60,9 @@ docker-compose up --build
 
 ✅ The services will be available on:
 
-- user_service → http://localhost:5001
+- user_service → http://localhost:5000
 
-- data_service → http://localhost:5002
+- data_service → http://localhost:5001
 
 🧹 Tear Down
 To stop and remove containers:
