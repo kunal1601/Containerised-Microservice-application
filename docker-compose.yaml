@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: users
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - backend
+
+  redis:
+    image: redis:6
+    networks:
+      - backend
+
+  user_service:
+    build: ./user_service
+    depends_on:
+      - postgres
+    ports:
+      - "5000:5000"
+    networks:
+      - backend
+
+  data_service:
+    build: ./data_service
+    depends_on:
+      - redis
+      - postgres
+    ports:
+      - "5001:5001"
+    networks:
+      - backend
+
+volumes:
+  pgdata:
+
+networks:
+  backend:
+
