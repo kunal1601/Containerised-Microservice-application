@@ -70,7 +70,7 @@ To stop and remove containers:
 🚀 Future Improvements
 - Add Nginx as a reverse proxy
 
-- Integrate logging and monitoring
+- Integrate logging and monitoringā
 
 - Container healthchecks
 
